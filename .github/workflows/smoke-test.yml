@@ -5,11 +5,8 @@ on: [push]
 jobs:
   check:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-
       - name: Verifica se as páginas HTML existem
         run:
-              test -f index.html && echo "index.html ok"
-              test -f index.html && test -f login.html && echo "páginas ok"
+          test -f index.html && test -f login.html && test -f cadastro.html && test -f perfil.html && test -f mural.html && echo "páginas ok"
