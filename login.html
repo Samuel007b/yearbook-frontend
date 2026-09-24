@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Yearbook Digital — Turma 2026</title>
+    <title>Entrar — Yearbook Digital</title>
   </head>
   <body>
     <header>
@@ -23,11 +23,21 @@
     <main>
       <section>
         <h2>Entrar</h2>
-        <p>Faça login para acessar seu perfil e o mural.</p>
+        <form>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required/>
+          </div>
+          <div>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="sua senha" required/>
+          </div>
+          <button type="submit">Entrar</button>
+        </form>
       </section>
     </main>
     <footer>
-      <p>Yearbook Digital — Turma 2026 · IFNMG Campus Salinas</p>
+      <p>&copy; 2026 Yearbook Digital · IFNMG Campus Salinas</p>
     </footer>
   </body>
 </html>

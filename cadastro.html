@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Perfil — Yearbook Digital</title>
+    <title>Criar conta — Yearbook Digital</title>
   </head>
   <body>
     <header>
@@ -22,12 +22,39 @@
     <main>
       <section>
         <h2>Criar conta</h2>
-        <p>Crie sua conta para fazer publicações no Yearbook.</p>
+        <p><strong>Atenção:</strong> preencha ao menos nome, email e senha.</p>
+        <form>
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required/>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required />
+          </div>
+          <div>
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" />
+          </div>
+          <div>
+            <label for="frase">Frase</label>
+            <input type="text" id="frase" name="frase" />
+          </div>
+          <div>
+            <label for="planosFuturos">Planos futuros</label>
+            <input type="text" id="planosFuturos" name="planosFuturos" />
+          </div>
+          <button type="submit">Criar conta</button>
+        </form>
       </section>
     </main>
 
     <footer>
-      <p>Yearbook Digital — Turma 2026 · IFNMG Campus Salinas</p>
+      <p>&copy; 2026 Yearbook Digital · IFNMG Campus Salinas</p>
     </footer>
   </body>
 </html>
