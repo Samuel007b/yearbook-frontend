@@ -1,13 +1,15 @@
 name: Smoke Test
 
-on:[push]
+on: [push]
 
 jobs:
-check:
-runs-on: ubuntu-latest
-steps:
--uses: actions/checkout@v4
--name: Verifica se as páginas HTML existem
-        run:|
-          test -f index.html && echo "index.html ok"
-          test -f index.html && test -f login.html && echo "páginas ok"
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verifica se as páginas HTML existem
+        run:
+              test -f index.html && echo "index.html ok"
+              test -f index.html && test -f login.html && echo "páginas ok"
