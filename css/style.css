@@ -1,15 +1,28 @@
-/* estilos globais — aplicados via herança a partir do body */
-body {
-  font-family: Arial, Helvetica, sans-serif; /* fonte do site todo */
-  color: #1f2937;          /* cor do texto */
-  background-color: #f9fafb; /* fundo claro */
-  margin: 0;               /* tira a margem padrão do navegador */
+:root {
+  --cor-primaria: #1e3a8a;   /* azul principal */
+  --cor-secundaria: #2563eb; /* azul dos links/botões */
+  --cor-texto: #1f2937;      /* texto */
+  --cor-fundo: #f9fafb;      /* fundo */
+  --fonte: 'Poppins', sans-serif;
 }
 
-h1 {
-  color: #1e3a8a; /* azul do título principal */
+body {
+  font-family: var(--fonte);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2 {
+  color: var(--cor-primaria);
+  font-weight: 700;
 }
 
 a {
-  color: #2563eb; /* cor dos links */
+  color: var(--cor-secundaria);
+}
+
+header {
+  text-align: center
 }
