@@ -44,6 +44,17 @@ header a {
   color: #ffffff;       /* links do menu em branco sobre o azul */
 }
 
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
 main {
   padding: 24px;
   max-width: 960px;     /* não deixa o conteúdo esticar demais */
@@ -65,4 +76,25 @@ textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 12px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--cor-secundaria);
+}
+
+.btn {
+  background-color: var(--cor-secundaria);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;                 /* mãozinha ao passar o mouse */
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--cor-primaria); /* escurece no hover */
 }
