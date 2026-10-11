@@ -6,6 +6,12 @@
   --fonte: 'Poppins', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;   /* zera margens padrão do navegador */
+  padding: 0;
+}
+
 body {
   font-family: var(--fonte);
   color: var(--cor-texto);
@@ -24,5 +30,39 @@ a {
 }
 
 header {
-  text-align: center
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+  padding: 24px;        /* respiro interno */
+  text-align: center;
+}
+
+header h1 {
+  color: #ffffff;
+}
+
+header a {
+  color: #ffffff;       /* links do menu em branco sobre o azul */
+}
+
+main {
+  padding: 24px;
+  max-width: 960px;     /* não deixa o conteúdo esticar demais */
+  margin: 0 auto;       /* centraliza o main na página */
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+footer {
+  padding: 16px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
 }
